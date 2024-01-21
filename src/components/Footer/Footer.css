@@ -1,0 +1,30 @@
+.footer-container {
+  background-color: #e8eceb;
+  padding: 20px 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-top: 1px solid #2d3e4e;
+}
+.media-container ul {
+  padding: 0;
+  max-width: 250px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footer-container h4 {
+  margin: 10px 0;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+}
+.footer-container p {
+  font-style: italic;
+  font-size: 14px;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+}

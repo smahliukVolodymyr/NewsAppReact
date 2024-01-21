@@ -1,0 +1,67 @@
+.navbar-container {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  height: 60px;
+  background-color: #e8eceb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #2d3e4e;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.logo-container {
+  margin-left: 35px;
+  font-family: "Pacifico", serif;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 800;
+}
+.logo-container p {
+  margin: 0;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+.logo-container span {
+  color: #5dafa9;
+}
+.icon {
+  height: 30px;
+  width: 30px;
+  margin-right: 35px;
+  padding: 5px;
+  color: #2d3e4e;
+  border: 1px solid #2d3e4e;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+.links-container {
+  position: absolute;
+  top: 50px;
+  right: 15px;
+  margin-top: 1rem;
+  min-width: 200px;
+  flex-direction: column;
+  text-align: start;
+  background-color: #e8eceb;
+  padding: 2rem;
+  border: 1px solid #2d3e4e;
+  border-radius: 5px;
+}
+.popularity-container h3,
+.filter-container h3 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.popularity-container ul,
+.filter-container ul {
+  list-style: square;
+}
+.popularity-container li,
+.filter-container li {
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  font-style: italic;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
