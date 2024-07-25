@@ -1,12 +1,13 @@
 import React from "react";
 import ArticleItem from "../ArticleItem/ArticleItem";
-import "./Article.css";
-function Article({ article }) {
+import "./ArticleList.css";
+
+function ArticleList({ articles }) {
   return (
     <div className="articles-container">
       <div className="items">
-        {article &&
-          article.map((item) => (
+        {articles &&
+          articles.map((item) => (
             <ArticleItem articleItem={item} key={item.asset_id} />
           ))}
       </div>
@@ -14,4 +15,4 @@ function Article({ article }) {
   );
 }
 
-export default Article;
+export default ArticleList;

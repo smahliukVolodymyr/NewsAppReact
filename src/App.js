@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react";
-import Article from "./components/Article/Article";
+import ArticleList from "./components/ArticleList/ArticleList";
 import SearchBar from "./components/SearchBar/SearchBar";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import axios from "axios";
 function App() {
-  const [articles, setArticles] = useState([]);
   const [seachDays, setSearchDays] = useState(1);
   const [popularity, setPopularity] = useState("viewed");
+  const [articles, setArticles] = useState([]);
+
   useEffect(() => {
     const fetchArticles = async () => {
       const articles = await axios.get(
@@ -17,6 +18,7 @@ function App() {
     };
     fetchArticles();
   }, [seachDays, popularity]);
+
   const updateArticles = (articles) => {
     setArticles(articles);
   };
@@ -24,7 +26,7 @@ function App() {
     <div>
       <Navbar setSearchDays={setSearchDays} setPopularity={setPopularity} />
       <SearchBar updateArticles={updateArticles} />
-      <Article article={articles} />
+      <ArticleList article={articles} />
       <Footer />
     </div>
   );
