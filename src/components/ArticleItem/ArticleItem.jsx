@@ -1,7 +1,7 @@
 import React from "react";
 import "./ArticleItem.css";
 function ArticleItem({ articleItem }) {
-  const defaultURL = `https://icrier.org/wp-content/uploads/2022/09/Event-Image-Not-Found.jpg`;
+  const defaultURL = process.env.REACT_APP_NO_IMG_URL;
   const { published_date, title, section, abstract, media, url } = articleItem;
   const image = media[0]?.["media-metadata"]?.[2]?.url || defaultURL;
 
